@@ -41,6 +41,14 @@ public class SQLite extends SQLiteOpenHelper {
                 "password TEXT," +
                 "email TEXT);";
         db.execSQL(create_users_table);
+        create_users_table = "CREATE TABLE " + "students" + "(" +
+                "id INTEGER NOT NULL PRIMARY KEY," +
+                "hoten TEXT NOT NULL," +
+                "lop TEXT NOT NULL," +
+                "chuyennganh TEXT NOT NULL," +
+                "sdt TEXT," +
+                "anhdaidien BLOB);";
+        db.execSQL(create_users_table);
     }
 
     @Override
