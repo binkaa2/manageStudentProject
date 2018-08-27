@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">manageStudentProject</string>
+    <string name="username">Username</string>
+    <string name="passworld">Passworld</string>
+</resources>
