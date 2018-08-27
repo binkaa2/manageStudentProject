@@ -3,7 +3,7 @@ package com.example.bin.managestudentproject.bean;
 public class studentsBean {
     private int id;
     private String hoten;
-    private String lop;
+    private String lop;   
     private String chuyenNganh;
     private String sdt;
     private byte[] anhDaiDien;
