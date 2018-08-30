@@ -7,7 +7,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -50,11 +52,13 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Sửa"/>
+                    android:text="Sửa"
+                    android:onClick="editStudentOnClick"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:text="Xóa"/>
+                    android:text="Xóa"
+                    android:onClick="deleteStudentOnClick"/>
             </LinearLayout>
         </LinearLayout>
 

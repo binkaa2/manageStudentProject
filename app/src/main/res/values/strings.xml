@@ -2,4 +2,7 @@
     <string name="app_name">manageStudentProject</string>
     <string name="username">Username</string>
     <string name="passworld">Passworld</string>
+    <string name="opendraw">OPEN DA DRAW</string>
+    <string name="closedraw">CLOSE DA DRAW</string>
+    <string name="userlogged"></string>
 </resources>

@@ -2,12 +2,21 @@ package com.example.bin.managestudentproject;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.example.bin.managestudentproject.bean.usersBean;
 import com.example.bin.managestudentproject.dao.SQLite;
@@ -43,5 +52,10 @@ public class MainActivity extends AppCompatActivity {
         tv_password = (EditText) findViewById(R.id.tv_password);
         db = new SQLite(MainActivity.this);
         usersBean user = db.createDefaultUser();
+
+
+
     }
+
+
 }

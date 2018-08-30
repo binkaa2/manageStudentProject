@@ -23,6 +23,7 @@ public class studentsDao extends SQLiteOpenHelper {
         super(context,DATABASE_NAME,null,SQL_VERSION);
     }
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
     }
@@ -90,5 +91,11 @@ public class studentsDao extends SQLiteOpenHelper {
         }
         return null;
     }
+
+    public void deleteStudents(int id){
+        SQLiteDatabase db = this.getWritableDatabase();
+        db.delete(TABLE_NAME,"id = ?",new String[]{String.valueOf(id)});
+    }
+
 
 }
