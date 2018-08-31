@@ -68,6 +68,7 @@ public class studentsDao extends SQLiteOpenHelper {
         return count;
     }
 
+
     public ArrayList<studentsBean> getAllStudents(){
 
         SQLiteDatabase db = this.getReadableDatabase();

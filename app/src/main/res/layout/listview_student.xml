@@ -53,12 +53,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Sửa"
-                    android:onClick="editStudentOnClick"/>
+                    android:id="@+id/btn_sua"/>
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Xóa"
-                    android:onClick="deleteStudentOnClick"/>
+                    android:id="@+id/btn_xoa"/>
             </LinearLayout>
         </LinearLayout>
 

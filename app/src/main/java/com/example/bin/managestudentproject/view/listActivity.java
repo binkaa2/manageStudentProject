@@ -13,6 +13,7 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -36,9 +37,6 @@ public class listActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawerLayout;
     private android.support.v7.widget.Toolbar toolbar;
     private NavigationView navigationView;
-    public void deleteStudentOnClick(View view){
-        Toast.makeText(listActivity.this, "e", Toast.LENGTH_SHORT).show();
-    }
 
 
     @Override
@@ -48,6 +46,8 @@ public class listActivity extends AppCompatActivity implements NavigationView.On
         studentDB = new studentsDao(listActivity.this);
         studentDB.ganGiaTriMacDinh();
         addListView();
+
+
 
         //add drawer
         toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.toolbar);
@@ -60,6 +60,7 @@ public class listActivity extends AppCompatActivity implements NavigationView.On
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     private void addListView() {
